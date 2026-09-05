@@ -14,6 +14,7 @@ npm run dev
 Source: https://github.com/dion-labs/pbot-site
 
 Cloudflare Pages project: `pbot-site`. Production domain: https://pbot.dionlabs.ai.
+Pages origin: https://pbot-site.pages.dev.
 
 Pushing to `main` triggers a production build and deployment. Other branches and pull requests get preview deployments through the Cloudflare GitHub integration.
 
