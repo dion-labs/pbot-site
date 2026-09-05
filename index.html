@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f1eb" />
+    <meta
+      name="description"
+      content="Meet pbot: an experimental, open-source workbench for local Android automation in Pokémon TCG Pocket. Built by DionLabs."
+    />
+    <title>pbot — A little bot. A persistent player.</title>
+    <link rel="icon" href="/favicon.png" />
+    <link rel="canonical" href="https://pbot.dionlabs.ai/" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem('pbot-theme') === 'light' ? 'light' : 'dark';
+      } catch {}
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute(
+          'content',
+          document.documentElement.dataset.theme === 'dark'
+            ? '#141b20'
+            : '#f3f1eb',
+        );
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/app/main.tsx"></script>
+  </body>
+</html>
