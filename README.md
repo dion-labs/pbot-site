@@ -30,3 +30,9 @@ No runtime secrets, device access, or control API are deployed. `npm start` prev
 Product claims and setup instructions are based on the pbot README and public documentation. The workflow display is explicitly illustrative and never connects to a running bot. Original mascot and favicon are copied from pbot's public brand assets. Keep Pokémon artwork and private runtime screenshots out of this site.
 
 Verification: production static export, TypeScript check, lint, and Cloudflare Git build. Browser interaction testing has not been performed.
+
+## Missing pages
+
+`public/404.html` is copied to the output root during the build. Cloudflare
+Pages uses it to return HTTP 404 for unknown paths instead of falling back to
+the homepage. Keep this file when changing the build or hosting configuration.
