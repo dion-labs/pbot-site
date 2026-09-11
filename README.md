@@ -16,6 +16,11 @@ Source: https://github.com/dion-labs/pbot-site
 Cloudflare Pages project: `pbot-site`. Production domain: https://pbot.dionlabs.ai.
 Pages origin: https://pbot-site.pages.dev.
 
+The `pbot-site` Worker forwards the custom domain to this Pages origin without
+copying assets or keeping application state. Router changes require
+`npx wrangler deploy --config wrangler.router.jsonc`; ordinary site changes
+use the Git-connected Pages build below.
+
 Pushing to `main` triggers a production build and deployment. Other branches and pull requests get preview deployments through the Cloudflare GitHub integration.
 
 - Build command: `npm run build`
