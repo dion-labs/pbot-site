@@ -52,7 +52,7 @@ export default function Home() {
             <span className="orbit orbit-two" />
             <div className="art-label">POCKET BOT / FIELD UNIT 001</div>
             <img
-              src="/pbot-mascot.png"
+              src="/pbot-mascot.webp"
               alt="pbot, a friendly ivory utility robot carrying a card, with a red p antenna"
               width="1254"
               height="1254"
@@ -173,7 +173,7 @@ export default function Home() {
         <p>
           An experiment by <a href="https://dionlabs.ai">DionLabs ↗</a>
         </p>
-        <a href={repo}>Source on GitHub ↗</a>
+        <a href={repo}>Source on GitHub ↗</a><a href="https://dionlabs.ai/privacy">Privacy</a><a href="https://dionlabs.ai/terms">Terms</a><a href="mailto:support@dionlabs.ai">Contact</a>
       </footer>
     </>
   );
