@@ -85,6 +85,7 @@ button:focus-visible {
   padding-top: 72px;
   padding-bottom: 74px;
   align-items: center;
+  overflow: clip;
 }
 .eyebrow {
   font: 600 12px/1.5 monospace;
